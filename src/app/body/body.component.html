@@ -1,0 +1,61 @@
+<section>
+  <div class="row add-item">
+      <div *ngFor="let add of advertisement">
+        <a href="#" class="list-group-item">
+          <div class="add-box"> 
+            <img class="img-responsive" src="{{ add.imagePath }}" alt="{{ add.sponsor }} ">
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+
+<section>
+  <div class="row">
+      <div class="col-xs-12 col-md-12 col-1g-12">
+        <div id="tabSet">
+          <h2> {{accordionTitle}} </h2>
+          <!-- <hr/> -->
+          <tabset #staticTabs> <!-- id="tabSet"-->
+            <tab heading="{{ tab.title }}" *ngFor="let tab of tabs">
+              <div class="tournament">
+                <div class="row">
+                  <div class="pd0 col-xs-12 col-md-6 col-lg-6">
+                    <a href="#" class="list-group-item">
+                      <div class="add-box"> 
+                        <img class="front-img" src="{{ tab.imagePath }}" alt="">
+                        <!-- <img class="back-img" src="../../assets/img/winners.jpg" alt=""> -->
+                        <div class="back-img"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="description col-xs-12 col-md-6 col-lg-6">
+                    <h3> {{ tab.title }} </h3>
+                    <p> {{ tab.description }} </p>
+                  </div>
+                </div>
+              </div>
+            </tab>
+          </tabset>
+        </div>
+      </div>
+    </div> 
+</section>
+
+<section id="accordion">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-1g-12">
+      <h4> FAQ </h4>
+      <ngb-accordion closeOthers="true" destroyOnHide="true">
+        <ngb-panel title="{{faq.title }}" *ngFor="let faq of faqs">
+          <span>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </span>
+          <ng-template ngbPanelContent > 
+             {{ faq.description }} 
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>  
+    </div>
+  </div>
+</section>
