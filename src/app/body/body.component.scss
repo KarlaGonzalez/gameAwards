@@ -133,9 +133,9 @@ section h2, section h4 {
     border: 1px solid yellow;
   }
 }
+//768 - 992
 
-
-@media only screen and (max-device-width: 414px){
+@media only screen and (max-width: 414px) {
   #tabSet  {
     margin: 3rem 0rem 3rem;
     h2, h3 {
@@ -178,3 +178,43 @@ section h2, section h4 {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #tabSet {
+    .back-img {
+      height: 16rem;
+      width: 21.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #tabSet {
+    margin: 3rem 0rem 5rem;
+    .description {
+      padding-left: 2.5rem;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1198px) {
+  #tabSet {
+    .back-img {
+      width: 29rem;
+    }
+    .description {
+      padding-left: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #tabSet {
+    .description {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+}
