@@ -3,14 +3,18 @@ $w: #FFFF;
 #header {
   height: 40rem;
   white-space: pre-line;
-  .title, .subttitle {
-    line-height: 1.5;
+  p {
+    font-family: soleil, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
   .title {
+    line-height: 1.2;
     font-family: soleil, sans-serif;
     font-weight: 700;
   }
   .subttitle {
+    line-height: 1.9;
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -61,3 +65,78 @@ $w: #FFFF;
   }
 }
 
+@media only screen and (max-width: 1366px) and (min-width: 768px) {
+  #header  {
+    .title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 790px) {
+  #header  {
+    text-align: center;
+    .title {
+      margin: 2rem auto;
+    }
+    .subtitle {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    button {
+      margin: 1rem auto;
+    }
+    .media-container {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px) {
+  #header  {
+    iframe {
+      min-height: 25rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  #header  {
+    .content {
+      flex-flow: column;
+      display: block;
+    }
+    iframe {
+      min-height: 25rem !important;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  #header {
+    .header-info {
+      text-align: center;
+      .btn-md {
+        height: 2rem;
+        width: 9rem;
+        font-size: 10px;
+        margin: 0 auto;
+      }
+      p {
+        font-size: .5rem;
+      }
+    }
+    .title {
+      font-size: 1rem;
+    }
+    .subtitle {
+      font-size: .5rem;
+    }
+    .fa {
+      padding: .5rem;
+      width: 2rem;
+      font-size: 11px;  
+    }
+  }
+}

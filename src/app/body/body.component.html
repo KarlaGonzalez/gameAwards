@@ -1,4 +1,4 @@
-<section>
+<section class="advertisments">
   <div class="row add-item">
       <div *ngFor="let add of advertisement">
         <a href="#" class="list-group-item">
@@ -15,8 +15,7 @@
       <div class="col-xs-12 col-md-12 col-1g-12">
         <div id="tabSet">
           <h2> {{accordionTitle}} </h2>
-          <!-- <hr/> -->
-          <tabset #staticTabs> <!-- id="tabSet"-->
+          <tabset #staticTabs> 
             <tab heading="{{ tab.title }}" *ngFor="let tab of tabs">
               <div class="tournament">
                 <div class="row">
@@ -24,7 +23,6 @@
                     <a href="#" class="list-group-item">
                       <div class="add-box"> 
                         <img class="front-img" src="{{ tab.imagePath }}" alt="">
-                        <!-- <img class="back-img" src="../../assets/img/winners.jpg" alt=""> -->
                         <div class="back-img"></div>
                       </div>
                     </a>

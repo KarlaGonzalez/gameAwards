@@ -45,11 +45,24 @@ footer {
   }
 }
 
-/* Media queries */
-//@media (min-width: 200px)
-@media only screen and (max-width: 768px) and (min-width: 200px) {
+
+@media only screen and (max-device-width: 414px) {
   footer {
-    border-top: 2px solid red;
-    text-align: center;
+    height: 16rem;
+    margin-top: 1rem;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 11px;
+    }
+    .container-fluid {
+      padding: 0;
+    }
+    .btn {
+      font-size: 12px;
+      height: 2rem;
+      width: 10rem;
+    }
   }
 }

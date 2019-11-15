@@ -20,6 +20,7 @@ section h2, section h4 {
     color: black;
     height: 10rem;
     width: 10rem;
+    background: transparent;
   }
   .add-box {
     height: 100%;
@@ -90,7 +91,6 @@ section h2, section h4 {
     flex-flow: column;
     justify-content: center;
     line-height: 2rem;
-    //border: 1px solid red;
     p {
       color: #8B92AF;
     }
@@ -120,7 +120,6 @@ section h2, section h4 {
   }
   .card {
     border: 0px;
-    //border-bottom: 1px solid black;
   }
   .card-header {
     background: white;
@@ -134,3 +133,48 @@ section h2, section h4 {
     border: 1px solid yellow;
   }
 }
+
+
+@media only screen and (max-device-width: 414px){
+  #tabSet  {
+    margin: 3rem 0rem 3rem;
+    h2, h3 {
+      font-size: 1rem;
+    }
+    .back-img {
+      display: none !important;
+    }
+    .front-img {
+      position: inherit;
+    }
+    .nav-link {
+      font-size: 10px;
+    }
+    .description {
+      text-align: center;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .add-item {
+    .list-group-item {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+
+  #accordion {
+    h4 {
+      margin-bottom: 1rem;
+    }
+    .btn-link {
+      font-size: 13px;
+    }
+    .card-body {
+      font-size: 12px;
+    }
+  }
+}
+
