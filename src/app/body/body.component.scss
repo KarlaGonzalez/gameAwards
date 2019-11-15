@@ -84,7 +84,7 @@ section h2, section h4 {
   .back-img {
     position: relative;
     left: 1rem;
-    bottom: -1rem;
+    bottom: -1.5rem;
   }
   .description {
     display: flex;
@@ -102,6 +102,8 @@ section h2, section h4 {
 
 #accordion {
  .btn-link::after {
+    position: relative;
+    top: -1rem;
     content: "\f055";
     color: #8B92AF;
     font-weight: 600;
@@ -115,6 +117,7 @@ section h2, section h4 {
     text-align: left;
     color: #8B92AF;
     padding-left: 0;
+    position: relative;
     text-decoration: none;
     border-bottom: 1px solid #F6F7FB;
   }
