@@ -1,0 +1,223 @@
+section {
+    font-family: soleil, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  section h2, section h4 {
+    font-family: soleil, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .add-item {
+    margin: 3rem 0rem;
+    justify-content: space-evenly;
+    .list-group-item {
+      border: 0px;
+      color: black;
+      height: 10rem;
+      width: 10rem;
+      background: transparent;
+    }
+    .add-box {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+    img {
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      padding: 0rem 5rem;
+    }
+  }
+  
+  #tabSet {
+    margin: 3rem 0rem 7rem;
+    //background: cyan;
+    .nav-tabs  {
+      display: flex;
+      flex-flow: row;
+      margin-bottom: 3rem;
+      justify-content: space-between;
+      .nav-link {
+        color: #7B829B;
+        border: 0;
+        &:hover {
+          color: #030612;
+        }
+      }
+      .nav-link.active {
+        color: #030612;
+        border-bottom: 2px solid #2049EF;
+      }
+    }
+    .add-box {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+    .list-group-item {
+      border: 0px;
+    }
+    img {
+      width: 100%;
+    }
+    .front-img, .back-img {
+      max-height: 21rem;
+      max-width: 30rem;
+    }
+    .back-img {
+      height: 21rem;
+      width: 30rem;
+      background: rgb(117,170,230);
+      background: linear-gradient(5deg, rgba(117,170,230,1) 0%, rgba(149,143,218,1) 60%, rgba(184,113,203,1) 100%);
+    }
+    .front-img {
+      z-index: 1;
+      position: absolute;
+    }
+    .back-img {
+      position: relative;
+      left: 1rem;
+      bottom: -1.5rem;
+    }
+    .description {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      line-height: 2rem;
+      p {
+        color: #8B92AF;
+      }
+    }
+    .pd0 {
+      padding-left: 0;
+    } 
+  }
+  
+  #accordion {
+   .btn-link::after {
+      position: relative;
+      top: -1rem;
+      content: "\f055";
+      color: #8B92AF;
+      font-weight: 600;
+      padding-left: 10rem;
+      display: inline-block;
+      padding-left: 100% !important;
+      font-family: "FontAwesome";
+    }
+    .btn-link {
+      width: 100%;
+      text-align: left;
+      color: #8B92AF;
+      padding-left: 0;
+      position: relative;
+      text-decoration: none;
+      border-bottom: 1px solid #F6F7FB;
+    }
+    .card {
+      border: 0px;
+    }
+    .card-header {
+      background: white;
+      border-bottom: 0;
+    }
+    .card-body {
+      margin-bottom: 2rem;
+      color: #747A94;
+    }
+    ngb-panel {
+      border: 1px solid yellow;
+    }
+  }
+  //768 - 992
+  
+  @media only screen and (max-width: 414px) {
+    #tabSet  {
+      margin: 3rem 0rem 3rem;
+      h2, h3 {
+        font-size: 1rem;
+      }
+      .back-img {
+        display: none !important;
+      }
+      .front-img {
+        position: inherit;
+      }
+      .nav-link {
+        font-size: 10px;
+      }
+      .description {
+        text-align: center;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  
+    .add-item {
+      .list-group-item {
+        height: 8rem;
+        width: 8rem;
+      }
+    }
+  
+    #accordion {
+      h4 {
+        margin-bottom: 1rem;
+      }
+      .btn-link {
+        font-size: 13px;
+      }
+      .card-body {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    #tabSet {
+      .back-img {
+        height: 16rem;
+        width: 21.5rem;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #tabSet {
+      margin: 3rem 0rem 5rem;
+      .description {
+        padding-left: 2.5rem;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1198px) {
+    #tabSet {
+      .back-img {
+        width: 29rem;
+      }
+      .description {
+        padding-left: 2.5rem;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #tabSet {
+      .description {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    }
+  }
