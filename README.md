@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+###### COMENTARIOS !!!!
+
+// Tabs component y Acordeon en BODY
+Seguí el tutorial para la tabla: 
+https://www.freakyjolly.com/angular-bootstrap-tabset-tutorial-with-options-by-example/
+
+y también la doc de ngx:
+https://valor-software.com/ngx-bootstrap/#/documentation
+
+y para el acordeon:
+https://www.freakyjolly.com/angular-ng-bootstrap-accordion-tutorial-by-example/

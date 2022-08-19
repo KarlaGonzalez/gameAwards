@@ -1,0 +1,68 @@
+$w: #FFFF;
+
+footer {
+  color: $w;
+  height: 25rem;
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  white-space: pre-line;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat, repeat;
+  background: linear-gradient(to bottom, rgba(0, 68, 255, 0.5) 0%, rgba(128, 0, 255, 0.5) 100%), url('https://i.pinimg.com/originals/de/58/c7/de58c73f23ef2c513790a045d9c660f6.jpg');
+  //background: linear-gradient(184deg, rgba(11,99,161,1) 0%, rgba(59,74,172,1) 39%, rgba(64,70,172,1) 47%, rgba(87,49,171,1) 100%, url('https://i.pinimg.com/originals/de/58/c7/de58c73f23ef2c513790a045d9c660f6.jpg'));
+  .container-fluid {
+    padding: 1rem 4rem;
+    text-align: center;
+    align-items: center;
+  }
+  h2 {
+    font-family: soleil, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .text {
+    color: $w;
+    font-size: 12px;
+  }
+  .list-options {
+    .list-inline-item {
+      width: 5rem;
+    }
+  }
+  .btn {
+    color: #FE0021;
+    border: 0;
+    height: 4rem;
+    width: 16rem;
+    background: $w;
+    border-radius: 45px;
+  }
+}
+
+
+@media only screen and (max-device-width: 414px) {
+  footer {
+    height: 16rem;
+    margin-top: 1rem;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 11px;
+    }
+    .container-fluid {
+      padding: 0;
+    }
+    .btn {
+      font-size: 12px;
+      height: 2rem;
+      width: 10rem;
+    }
+  }
+}

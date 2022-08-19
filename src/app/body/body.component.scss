@@ -4,6 +4,7 @@ section {
     font-style: normal;
   
   }
+
   section h2, section h4 {
     font-family: soleil, sans-serif;
     font-weight: 700;
@@ -15,17 +16,17 @@ section {
   .add-item {
     margin: 3rem 0rem;
     justify-content: space-evenly;
-    .list-group-item {
-      border: 0px;
-      color: black;
-      height: 10rem;
-      width: 10rem;
-      background: transparent;
-    }
     .add-box {
       height: 100%;
       display: flex;
       flex-flow: column;
+    }
+    .box {
+        border: 0px;
+        color: black;
+        height: 10rem;
+        width: 10rem;
+        background: transparent;
     }
     img {
       width: 100%;

@@ -1,7 +1,7 @@
 <section class="advertisments">
     <div class="row add-item">
-        <div *ngFor="let add of advertisement">
-          <a href="#" class="list-group-item">
+        <div class="box" *ngFor="let add of advertisement">
+          <a href="#">
             <div class="add-box"> 
               <img class="img-responsive" src="{{ add.imagePath }}" alt="{{ add.sponsor }} ">
             </div>
@@ -15,24 +15,7 @@
         <div class="col-xs-12 col-md-12 col-1g-12">
           <div id="tabSet">
             <h2> {{accordionTitle}} </h2>
-            <ngb-tabset>
-                <ngb-tab title="Tab One">
-                  <ng-template ngbTabContent>
-                    <p>Tab one content here</p>
-                  </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Tab Two">
-                  <ng-template ngbTabContent>
-                    <p>Tab two content here</p>
-                  </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Tab Three">
-                  <ng-template ngbTabContent>
-                    <p>Tab three content here</p>
-                  </ng-template>
-                </ngb-tab>
-              </ngb-tabset>
-            <!-- <tabset #staticTabs> 
+            <tabset #staticTabs> 
               <tab heading="{{ tab.title }}" *ngFor="let tab of tabs">
                 <div class="tournament">
                   <div class="row">
@@ -51,7 +34,7 @@
                   </div>
                 </div>
               </tab>
-            </tabset> -->
+            </tabset>
           </div>
         </div>
       </div> 
@@ -61,7 +44,28 @@
     <div class="row">
       <div class="col-xs-12 col-md-12 col-1g-12">
         <h4> FAQ </h4>
-        <ngb-accordion closeOthers="true" destroyOnHide="true">
+        <!-- Sample...
+            <ngb-accordion>
+            <ngb-panel title="Panel One">
+                <ng-template ngbPanelContent>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute.
+                </ng-template>
+            </ngb-panel>
+            <ngb-panel title="Panel Two">
+                <ng-template ngbPanelContent>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute.
+                </ng-template>
+            </ngb-panel>
+            <ngb-panel title="Panel Three">
+                <ng-template ngbPanelContent>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute.
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion> -->
+        <ngb-accordion> <!-- closeOthers="true" destroyOnHide="true"-->
           <ngb-panel title="{{faq.title }}" *ngFor="let faq of faqs">
             <span>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
