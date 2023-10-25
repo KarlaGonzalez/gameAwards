@@ -33,7 +33,7 @@ returnText = "<strong> YES</strong>";
       imagePath: '../../assets/img/guinness.png'},
     {
       sponsor: 'Echo Fox',
-      imagePath: '../../assets/img/echo.png'}
+      imagePath: 'https://drive.google.com/file/d/1V3jOqi0QiPCRS9T90ceSI0JoMVfAeHYA/view?usp=sharing'} //../../assets/img/echo.png
   ];
 
   faqs = [
