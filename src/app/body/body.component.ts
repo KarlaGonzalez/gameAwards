@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { TabsetComponent } from 'ngx-bootstrap/tabs';
+import {abc} from '../../assets/img/test'
 
 @Component({
   selector: 'app-body',
@@ -33,7 +34,7 @@ returnText = "<strong> YES</strong>";
       imagePath: '../../assets/img/guinness.png'},
     {
       sponsor: 'Echo Fox',
-      imagePath: 'https://drive.google.com/file/d/1V3jOqi0QiPCRS9T90ceSI0JoMVfAeHYA/view?usp=sharing'} //../../assets/img/echo.png
+      imagePath: '../../assets/img/echo.png'} 
   ];
 
   faqs = [
@@ -112,7 +113,7 @@ returnText = "<strong> YES</strong>";
   constructor() { }
 
   ngOnInit() {
-
+    abc()
     
   }
 

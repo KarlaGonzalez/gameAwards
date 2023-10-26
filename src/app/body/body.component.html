@@ -3,7 +3,7 @@
         <div class="box" *ngFor="let add of advertisement">
           <a href="#">
             <div class="add-box"> 
-              <img class="img-responsive" src="{{ add.imagePath }}" alt="{{ add.sponsor }} ">
+              <img class="img-responsive" [src]="add.imagePath" alt="{{ add.sponsor }} ">
             </div>
           </a>
         </div>
